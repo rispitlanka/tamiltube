@@ -1,0 +1,38 @@
+{
+  "name": "tamiltube-insights",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Channel analytics, outlier videos, similar channels and AI topic ideas for Tamil YouTube creators",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "seed": "tsx scripts/seed.ts",
+    "collect": "tsx scripts/collect.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4",
+    "next": "^15.0.0",
+    "postgres": "^3.4.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.31.11",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
